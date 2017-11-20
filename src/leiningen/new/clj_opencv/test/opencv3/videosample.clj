@@ -1,4 +1,4 @@
-(ns opencv3.video.short-stream3
+(ns opencv3.videosample
   (:require
     [opencv3.core :refer :all]
     [opencv3.video :as v]
@@ -15,6 +15,5 @@
      output))))
 
 (comment
-
   (-main)
   )
