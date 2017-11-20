@@ -1,4 +1,4 @@
-(defproject clj-opencv/lein-template "0.0.4"
+(defproject clj-opencv/lein-template "0.0.5"
   :description "Created with lein-create-template"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"

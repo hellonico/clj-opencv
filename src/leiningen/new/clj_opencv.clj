@@ -9,7 +9,8 @@
   (let [data {:name name
               :ns-name (sanitize-ns name)
               :sanitized (name-to-path name)}]
-    (->files data ["samples/opencv3/collage.clj" (render "samples/opencv3/collage.clj" data)]
+    (->files data 
+
 ; project
 ["project.clj" (render "project.clj" data)]
 

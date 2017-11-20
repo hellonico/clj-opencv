@@ -1,7 +1,7 @@
 ;; gorilla-repl.fileformat = 1
 
 ;; **
-;;; # Origami Practice Page
+;;; # Origami Quick Start Page
 ;;; 
 ;; **
 

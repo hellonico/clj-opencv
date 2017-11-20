@@ -3,7 +3,7 @@
   <groupId>clj-opencv</groupId>
   <artifactId>lein-template</artifactId>
   <packaging>jar</packaging>
-  <version>0.0.3</version>
+  <version>0.0.4</version>
   <name>lein-template</name>
   <description>Created with lein-create-template</description>
   <url>http://example.com/FIXME</url>
@@ -13,7 +13,12 @@
       <url>http://www.eclipse.org/legal/epl-v10.html</url>
     </license>
   </licenses>
-  <scm/>
+  <scm>
+    <url>https://github.com/hellonico/clj-opencv</url>
+    <connection>scm:git:git://github.com/hellonico/clj-opencv.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/hellonico/clj-opencv.git</developerConnection>
+    <tag>5bea10265a47735dc4ea2a85d870082a12578f80</tag>
+  </scm>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <testSourceDirectory>test</testSourceDirectory>
