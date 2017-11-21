@@ -5,6 +5,8 @@
 :plugins [[lein-gorilla "0.4.0"]]
 :test-paths ["test"]
 :resource-paths ["rsc"]
+:plugins [[lein-auto "0.1.3"]]
+:auto {:default {:file-pattern #"\.(clj)$"}}
 :main opencv3.ok
 :repositories [["vendredi" "https://repository.hellonico.info/repository/hellonico/"]]
 :aliases {"notebook" ["gorilla" ":ip" "0.0.0.0" ":port" "10000"]}
