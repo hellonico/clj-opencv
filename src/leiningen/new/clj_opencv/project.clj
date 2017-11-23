@@ -2,10 +2,9 @@
 :injections [
  (clojure.lang.RT/loadLibrary org.opencv.core.Core/NATIVE_LIBRARY_NAME)
 ]
-:plugins [[lein-gorilla "0.4.0"]]
 :test-paths ["test"]
 :resource-paths ["rsc"]
-:plugins [[lein-auto "0.1.3"]]
+:plugins [[lein-gorilla "0.4.0"][lein-auto "0.1.3"]]
 :auto {:default {:file-pattern #"\.(clj)$"}}
 :main opencv3.ok
 :repositories [["vendredi" "https://repository.hellonico.info/repository/hellonico/"]]
