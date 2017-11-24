@@ -17,7 +17,7 @@
     <url>https://github.com/hellonico/clj-opencv</url>
     <connection>scm:git:git://github.com/hellonico/clj-opencv.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/hellonico/clj-opencv.git</developerConnection>
-    <tag>8def21867d740a9753f6f8bbd3959f0e2a0ec339</tag>
+    <tag>23b75a483b500567d115184a78adc1c821deabbb</tag>
   </scm>
   <build>
     <sourceDirectory>src</sourceDirectory>
