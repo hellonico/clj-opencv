@@ -1,4 +1,4 @@
-(ns opencvfun.simple
+(ns opencv3.simple
   (:require opencv3.utils)
   (:require [opencv3.core :refer :all])
   (:import
@@ -122,7 +122,7 @@
 ; Split colors and concat into single image
 ;;;
 (def mat (imread "resources/cat.jpg" ))
-(def dst (new-list 3))
+(def dst (new-arraylist 3))
 (split mat dst)
 
 (def target (new-mat))
@@ -192,3 +192,6 @@
   (imread)
   (box-filter! -1 (new-size 100 100))
   (imwrite "output/simple.png"))
+
+
+(defn -main [& args])

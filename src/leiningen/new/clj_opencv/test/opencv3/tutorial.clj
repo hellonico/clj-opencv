@@ -102,6 +102,11 @@
   (threshold! 150 255 THRESH_BINARY)
   (imwrite "output/tutorial.png"))
 
+; load and show image
+(->
+  "resources/minicat.jpg"
+  (imread)
+  (u/imshow))
 
 ; http://qiita.com/gutugutu3030/items/3907530ee49433420b37
 
@@ -142,3 +147,5 @@
   (threshold! 50 200 THRESH_BINARY)
   (distance-transform! DIST_L1 5)
   (imwrite "output/tutorial.png")))
+
+(defn -main [& args])
