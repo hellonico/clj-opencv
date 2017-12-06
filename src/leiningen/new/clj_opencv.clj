@@ -18,6 +18,9 @@
 ["notes/practice.clj" (render "notes/practice.clj" data)]
 ["notes/empty.clj" (render "notes/empty.clj" data)]
 
+; output folder
+["output/.gitkeep" (render "output/.gitkeep" data)]
+
 ; samples
 ["test/opencv3/ok.clj" (render "test/opencv3/ok.clj" data)]
 ["test/opencv3/simple.clj" (render "test/opencv3/simple.clj" data)]

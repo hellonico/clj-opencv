@@ -21,20 +21,20 @@
 ; 0 : flip x
 ; 1 ; flip y
 ; -1 ; flip x and y
-(-> "resources/images/cat.jpg"
+(-> "resources/cat.jpg"
   (imread)
   (flip! 1)
   (imwrite "output/simple.png"))
 
 ; change color map
-(-> "resources/images/cat.jpg"
+(-> "resources/cat.jpg"
   (imread)
   (cvt-color! COLORMAP_JET)
   (imwrite "output/simple.png"))
 
 ; write circle
 ; just line
-(def im (-> "resources/images/cat.jpg" (imread)))
+(def im (-> "resources/cat.jpg" (imread)))
 (circle im (new-point 800 400) 200 (new-scalar 0 0 0) 10)
 (imwrite  im "output/simple.png")
 
@@ -43,7 +43,7 @@
 (imwrite  im "output/simple.png")
 
 ; resizing a picture
-(-> "resources/images/cat.jpg"
+(-> "resources/cat.jpg"
 (imread)
 (resize! (new-size 150 100))
 (imwrite  "output/simple.png"))
@@ -52,7 +52,7 @@
 ; rotation a picture
 ;
 (->
-"resources/images/cat.jpg"
+"resources/cat.jpg"
  (imread)
  (warp-affine! (get-rotation-matrix-2-d (new-point 400 400) 90 1) (new-size 600 800) INTER_NEAREST)
  (imwrite  "output/simple.png"))
@@ -62,34 +62,34 @@
 ;;;
 
 ; binary
-(-> "resources/images/cat.jpg"
+(-> "resources/cat.jpg"
  (imread CV_8UC1)
  (threshold! 100.0 200.0 THRESH_BINARY)
  (imwrite "output/simple.png"))
 
 
 ; binary inverse
-(-> "resources/images/cat.jpg"
+(-> "resources/cat.jpg"
  (imread CV_8UC1)
  (threshold! 100.0 200.0 THRESH_BINARY_INV)
  (imwrite "output/simple.png"))
 
 ; binary trunc
-(-> "resources/images/cat.jpg"
+(-> "resources/cat.jpg"
  (imread CV_8UC1)
  (threshold! 100.0 200.0 THRESH_TRUNC)
  (imwrite "output/simple.png"))
 
 ; tozero
 (->
-  "resources/images/cat.jpg"
+  "resources/cat.jpg"
  (imread CV_8UC1)
  (threshold! 180.0 250.0 THRESH_TOZERO)
  (imwrite "output/simple.png"))
 
 
 (->
- "resources/images/cat.jpg"
+ "resources/cat.jpg"
   (imread CV_8UC1)
   (threshold! 150.0 200.0 THRESH_TOZERO_INV)
   (imwrite "output/simple.png"))
@@ -97,13 +97,13 @@
 
 ; adaptive with binary and binary inv
 (->
- "resources/images/cat.jpg"
+ "resources/cat.jpg"
   (imread CV_8UC1)
   (adaptive-threshold! 200.0 ADAPTIVE_THRESH_MEAN_C THRESH_BINARY 3 8)
   (imwrite "output/simple.png"))
 
 (->
- "resources/images/cat.jpg"
+ "resources/cat.jpg"
   (imread CV_8UC1)
   (adaptive-threshold! 200.0 ADAPTIVE_THRESH_MEAN_C THRESH_BINARY_INV 3 4)
   (imwrite "output/simple.png"))
@@ -113,7 +113,7 @@
 ;;;
 ; need to be loaded in black and white first
 (->
- "resources/images/cat.jpg"
+ "resources/cat.jpg"
  (imread CV_8UC1)
  (equalize-hist!)
  (imwrite "output/simple.png"))
@@ -121,7 +121,7 @@
 ;;;
 ; Split colors and concat into single image
 ;;;
-(def mat (imread "resources/images/cat.jpg" ))
+(def mat (imread "resources/cat.jpg" ))
 (def dst (new-list 3))
 (split mat dst)
 
@@ -132,7 +132,7 @@
 ;;;
 ; filters
 ;;;
-(-> "resources/images/cat.jpg"
+(-> "resources/cat.jpg"
 (imread)
 (bitwise-not!)
 (imwrite "output/simple.png"))
@@ -140,55 +140,55 @@
 ;;;
 ; Blurs
 ;;;
-(-> "resources/images/cat.jpg"
+(-> "resources/cat.jpg"
 (imread)
 (blur! (new-size 30 30))
 (imwrite "output/simple.png"))
 
-(-> "resources/images/cat.jpg"
+(-> "resources/cat.jpg"
 (imread)
 (median-blur! 11)
 (imwrite "output/simple.png"))
 
 ; speed
-(-> "resources/images/cat.jpg"
+(-> "resources/cat.jpg"
   (imread)
   (gaussian-blur! (new-size 31 5) 80 3)
   (imwrite "output/simple.png"))
 
 ; laplacian
-(-> "resources/images/cat.jpg"
+(-> "resources/cat.jpg"
   (imread)
   (laplacian! -1)
   (imwrite "output/simple.png"))
 
 ; Sobel
-(-> "resources/images/cat.jpg"
+(-> "resources/cat.jpg"
   (imread)
   (sobel! -1 0 1)
   (imwrite "output/simple.png"))
 
 ; Canny
-(-> "resources/images/cat.jpg"
+(-> "resources/cat.jpg"
   (imread CV_8UC1)
   (canny! 50.0 250.0)
   (imwrite "output/simple.png"))
 
 (def kernel (get-structuring-element MORPH_RECT (new-size 5 5)))
 ; dilate
-(-> "resources/images/cat.jpg"
+(-> "resources/cat.jpg"
   (imread CV_8UC1)
   (dilate! kernel)
   (imwrite "output/simple.png"))
 
 ; erode
-(-> "resources/images/cat.jpg"
+(-> "resources/cat.jpg"
   (imread CV_8UC1)
   (erode! kernel)
   (imwrite "output/simple.png"))
 
 ; box filter
-(-> "resources/images/cat.jpg"
+(-> "resources/cat.jpg"
   (imread)
   (box-filter! -1 (new-size 100 100))
   (imwrite "output/simple.png"))
