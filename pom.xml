@@ -3,7 +3,7 @@
   <groupId>clj-opencv</groupId>
   <artifactId>lein-template</artifactId>
   <packaging>jar</packaging>
-  <version>0.0.9</version>
+  <version>0.0.11</version>
   <name>lein-template</name>
   <description>Created with lein-create-template</description>
   <url>http://example.com/FIXME</url>
@@ -17,7 +17,7 @@
     <url>https://github.com/hellonico/clj-opencv</url>
     <connection>scm:git:git://github.com/hellonico/clj-opencv.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/hellonico/clj-opencv.git</developerConnection>
-    <tag>8d86fbeed6e4b07a55ed8f856e85d6fd98789a3f</tag>
+    <tag>a5968e81c1a8b4474660edd45c6931db89e181c9</tag>
   </scm>
   <build>
     <sourceDirectory>src</sourceDirectory>
