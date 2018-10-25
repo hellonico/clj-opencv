@@ -1,8 +1,8 @@
-(ns opencv3.videosample
+(ns opencv4.videosample
   (:require
-    [opencv3.core :refer :all]
-    [opencv3.video :as v]
-    [opencv3.utils :as u]))
+    [opencv4.core :refer :all]
+    [opencv4.video :as v]
+    [opencv4.utils :as u]))
 
 (defn -main[ & args]
   (u/simple-cam-window

@@ -1,5 +1,5 @@
-(ns opencv3.ok
-	(:require [opencv3.core :refer :all]))
+(ns opencv4.ok
+	(:require [opencv4.core :refer :all]))
 
 (defn -main [& args]
   (println "Using OpenCV Version: " VERSION "..")

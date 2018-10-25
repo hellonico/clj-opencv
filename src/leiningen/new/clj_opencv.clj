@@ -22,10 +22,10 @@
 ["output/.gitkeep" (render "output/.gitkeep" data)]
 
 ; samples
-["test/opencv3/ok.clj" (render "test/opencv3/ok.clj" data)]
-["test/opencv3/simple.clj" (render "test/opencv3/simple.clj" data)]
-["test/opencv3/tutorial.clj" (render "test/opencv3/tutorial.clj" data)]
-["test/opencv3/videosample.clj" (render "test/opencv3/videosample.clj" data)]
+["test/opencv4/ok.clj" (render "test/opencv4/ok.clj" data)]
+["test/opencv4/simple.clj" (render "test/opencv4/simple.clj" data)]
+["test/opencv4/tutorial.clj" (render "test/opencv4/tutorial.clj" data)]
+["test/opencv4/videosample.clj" (render "test/opencv4/videosample.clj" data)]
 
 ; images
 ["resources/cat.jpg" (raw "resources/cat.jpg")]

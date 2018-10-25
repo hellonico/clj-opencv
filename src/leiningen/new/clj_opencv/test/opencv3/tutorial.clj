@@ -1,7 +1,7 @@
-(ns opencv3.tutorial
+(ns opencv4.tutorial
  (:require
-   [opencv3.utils :as u]
-   [opencv3.core :refer :all]))
+   [opencv4.utils :as u]
+   [opencv4.core :refer :all]))
 
 ; playing with bytes
 (def image (new-mat 640 480 CV_8UC3))
