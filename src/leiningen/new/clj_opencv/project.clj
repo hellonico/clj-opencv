@@ -1,6 +1,5 @@
 (defproject {{ns-name}} "0.1-SNAPSHOT"
 :test-paths ["test"]
-:resource-paths ["rsc"]
 :plugins [[hellonico/lein-gorilla "0.4.1"][lein-auto "0.1.3"]]
 :auto {:default {:file-pattern #"\.(clj)$"}}
 :main opencv4.ok
@@ -20,5 +19,4 @@
 :dependencies [
  [org.clojure/clojure "1.9.0"]
  [org.clojure/tools.cli "0.3.5"]
- [origami "4.0.0-beta6"]]
- )
+ [origami "4.0.0-beta6"]])

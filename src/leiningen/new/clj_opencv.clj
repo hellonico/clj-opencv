@@ -13,6 +13,8 @@
 
 ; project
 ["project.clj" (render "project.clj" data)]
+["deps.edn" (render "deps.edn" data)]
+["README.md" (render "README.md" data)]
 
 ; notes
 ["notes/practice.clj" (render "notes/practice.clj" data)]
@@ -21,11 +23,12 @@
 ; output folder
 ["output/.gitkeep" (render "output/.gitkeep" data)]
 
+
 ; samples
-["test/opencv4/ok.clj" (render "test/opencv4/ok.clj" data)]
-["test/opencv4/simple.clj" (render "test/opencv4/simple.clj" data)]
-["test/opencv4/tutorial.clj" (render "test/opencv4/tutorial.clj" data)]
-["test/opencv4/videosample.clj" (render "test/opencv4/videosample.clj" data)]
+["src/opencv4/ok.clj" (render "src/opencv4/ok.clj" data)]
+["src/opencv4/simple.clj" (render "src/opencv4/simple.clj" data)]
+["src/opencv4/tutorial.clj" (render "src/opencv4/tutorial.clj" data)]
+["src/opencv4/videosample.clj" (render "src/opencv4/videosample.clj" data)]
 
 ; images
 ["resources/cat.jpg" (raw "resources/cat.jpg")]
