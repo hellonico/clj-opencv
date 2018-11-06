@@ -15,6 +15,7 @@
 ["project.clj" (render "project.clj" data)]
 ["deps.edn" (render "deps.edn" data)]
 ["README.md" (render "README.md" data)]
+["Dockerfile" (render "Dockerfile" data)]
 
 ; notes
 ["notes/practice.clj" (render "notes/practice.clj" data)]
