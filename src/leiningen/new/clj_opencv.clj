@@ -30,6 +30,7 @@
 ["src/opencv4/simple.clj" (render "src/opencv4/simple.clj" data)]
 ["src/opencv4/tutorial.clj" (render "src/opencv4/tutorial.clj" data)]
 ["src/opencv4/videosample.clj" (render "src/opencv4/videosample.clj" data)]
+["src/opencv4/lena.clj" (render "src/opencv4/lena.clj" data)]
 
 ; images
 ["resources/cat.jpg" (raw "resources/cat.jpg")]
@@ -37,6 +38,9 @@
 ["resources/nekobench.jpg" (raw "resources/nekobench.jpg")]
 ["resources/souslesoleil.jpg" (raw "resources/souslesoleil.jpg")]
 ["resources/sunflower.jpg" (raw "resources/sunflower.jpg")]
+
+["resources/lena.png" (raw "resources/lena.png")]
+["resources/blurred.png" (raw "resources/blurred.png")]
 
 ; setting files
 ["resources/XML/aGest.xml" (render "resources/XML/aGest.xml")]
