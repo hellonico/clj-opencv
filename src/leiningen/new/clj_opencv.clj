@@ -22,7 +22,7 @@
 ["notes/empty.clj" (render "notes/empty.clj" data)]
 
 ; output folder
-["output/.gitkeep" (render "output/.gitkeep" data)]
+["output/gitkeep" (render "output/.gitkeep" data)]
 
 
 ; samples
