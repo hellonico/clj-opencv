@@ -1,4 +1,4 @@
-(defproject clj-opencv/lein-template "0.0.31-SNAPSHOT"
+(defproject clj-opencv/lein-template "0.0.31"
   :description "Created with lein-create-template"
   :url "http://example.com/FIXME"
   :deploy-repositories [["releases" :clojars]]
