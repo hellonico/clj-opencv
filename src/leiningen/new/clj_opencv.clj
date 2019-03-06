@@ -21,6 +21,9 @@
 ["notes/practice.clj" (render "notes/practice.clj" data)]
 ["notes/empty.clj" (render "notes/empty.clj" data)]
 
+; jupyter
+["jupyter/firstbook.ipynb" (render "jupyter/firstbook.ipynb" data)]
+
 ; output folder
 ["output/.gitkeep" (render "output/gitkeep" data)]
 

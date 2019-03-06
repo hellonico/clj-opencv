@@ -1,6 +1,6 @@
 (defproject {{ns-name}} "0.1-SNAPSHOT"
 :test-paths ["test"]
-:plugins [[hellonico/lein-gorilla "0.4.2"][lein-auto "0.1.3"]]
+:plugins [[hellonico/lein-gorilla "0.4.2"][lein-auto "0.1.3"][lein-jupyter "0.1.16"]]
 :auto {:default {:file-pattern #"\.(clj)$"}}
 :main opencv4.ok
 :repositories [["vendredi" "https://repository.hellonico.info/repository/hellonico/"]]
@@ -19,7 +19,7 @@
 :dependencies [
  [org.clojure/clojure "1.9.0"]
  [org.clojure/tools.cli "0.3.5"]
- [origami "4.0.0-5"]
+ [origami "4.0.0-6"]
 
  ; uncomment to use only the binary for your platform
  ;[origami "4.0.0-1" :exclusions [opencv/opencv-native]]
