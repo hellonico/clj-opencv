@@ -19,7 +19,7 @@
 :dependencies [
  [org.clojure/clojure "1.9.0"]
  [org.clojure/tools.cli "0.3.5"]
- [origami "4.0.0-6"]
+ [origami "4.1.1-1"]
 
  ; uncomment to use only the binary for your platform
  ;[origami "4.0.0-1" :exclusions [opencv/opencv-native]]
