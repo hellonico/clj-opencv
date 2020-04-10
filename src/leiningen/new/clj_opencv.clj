@@ -8,6 +8,7 @@
   [name]
   (let [data {:name name
               :ns-name (sanitize-ns name)
+              :version "4.3.0-1"
               :sanitized (name-to-path name)}]
     (->files data 
 
@@ -18,8 +19,8 @@
 ["Dockerfile" (render "Dockerfile" data)]
 
 ; notes
-["notes/practice.clj" (render "notes/practice.clj" data)]
-["notes/empty.clj" (render "notes/empty.clj" data)]
+; ["notes/practice.clj" (render "notes/practice.clj" data)]
+; ["notes/empty.clj" (render "notes/empty.clj" data)]
 
 ; jupyter
 ["jupyter/firstbook.ipynb" (render "jupyter/firstbook.ipynb" data)]

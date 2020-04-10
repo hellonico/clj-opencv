@@ -3,12 +3,12 @@
  	"vendredi" {:url "https://repository.hellonico.info/repository/hellonico/"}
  }
  :deps { 
- 	origami {:mvn/version "4.2.0-1"}
+ 	origami {:mvn/version "{{version}}"}
 
  	; uncomment to use only the binary for your platform
- 	; origami {:mvn/version "4.0.0-1" :exclusions [opencv/opencv-native]}
- 	; opencv/opencv-native$osx_64 {:mvn/version "4.0.0-0"}
- 	; opencv/opencv-native$linux_64 {:mvn/version "4.0.0-0"}
- 	; opencv/opencv-native$windows_64 {:mvn/version "4.0.0-0"}
+ 	; origami {:mvn/version "{{version}}" :exclusions [opencv/opencv-native]}
+ 	; opencv/opencv-native$osx_64 {:mvn/version "{{version}}"}
+ 	; opencv/opencv-native$linux_64 {:mvn/version "{{version}}"}
+ 	; opencv/opencv-native$windows_64 {:mvn/version "{{version}}"}
  }
 }
