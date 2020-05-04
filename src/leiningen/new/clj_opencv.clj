@@ -8,7 +8,7 @@
   [name]
   (let [data {:name name
               :ns-name (sanitize-ns name)
-              :version "4.3.0-1"
+              :version "4.3.0-7"
               :sanitized (name-to-path name)}]
     (->files data 
 
