@@ -3,7 +3,7 @@
  :aliases
  {:ok {:main-opts ["-m" "opencv4.ok"]}
   :simple {:main-opts ["-m" "opencv4.simple"]}
-  :video {:main-opts ["-m" "opencv4.video"]}
+  :video {:main-opts ["-m" "opencv4.videosample"]}
   :youtube {:main-opts ["-m" "opencv4.youtube"]}}
  :deps {origami {:mvn/version "{{version}}"}
         origami/filters {:mvn/version "{{version-filters}}"}
