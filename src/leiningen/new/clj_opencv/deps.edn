@@ -1,8 +1,8 @@
 {:mvn/repos
  {"vendredi" {:url "https://repository.hellonico.info/repository/hellonico/"}}
  :deps {origami {:mvn/version "{{version}}"}
-        origami/filters {:mvn/version "1.11"}
-        origami/sources {:mvn/version "1.0.0"}
+        origami/filters {:mvn/version "{{version-filters}}"}
+        origami/sources {:mvn/version "{{version-sources}}"}
 
  	; uncomment to use only the binary for your platform
  	; origami {:mvn/version "{{version}}" :exclusions [opencv/opencv-native]}

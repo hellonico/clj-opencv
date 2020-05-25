@@ -9,6 +9,8 @@
   (let [data {:name name
               :ns-name (sanitize-ns name)
               :version "4.3.0-8"
+              :version-sources "1.0.1"
+              :version-filters "1.11"
               :sanitized (name-to-path name)}]
     (->files data
 
@@ -35,6 +37,7 @@
              ["src/opencv4/tutorial.clj" (render "src/opencv4/tutorial.clj" data)]
              ["src/opencv4/videosample.clj" (render "src/opencv4/videosample.clj" data)]
              ["src/opencv4/lena.clj" (render "src/opencv4/lena.clj" data)]
+             ["src/opencv4/youtube.clj" (render "src/opencv4/youtube.clj" data)]
 
 ; images
              ["resources/cat.jpg" (raw "resources/cat.jpg")]
