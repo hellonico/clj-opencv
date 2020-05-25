@@ -6,6 +6,11 @@
   :main opencv4.ok
   :repositories [["vendredi" "https://repository.hellonico.info/repository/hellonico/"]]
 ; :aliases {"notebook" ["gorilla" ":ip" "0.0.0.0" ":port" "10000"]}
+  :aliases {"lena" ["run" "-m" "opencv4.lena"]
+            "ok" ["run" "-m" "opencv4.ok"]
+            "video" ["run" "-m" "opencv4.videosample"]
+            "youtube" ["run" "-m" "opencv4.youtube"]
+            "simple" ["run" "-m" "opencv4.simple"]}
   :profiles {:dev {:resource-paths ["resources"]
                    :dependencies [; used for proto repl
   ; [org.clojure/tools.nrepl "0.2.11"]
@@ -18,7 +23,7 @@
                  [org.clojure/tools.cli "0.3.5"]
                  [origami "{{version}}"]
                  [origami/filters "{{version-filters}}"]
-                 [origami-sources "{{version-sources}}"]
+                 [origami/sources "{{version-sources}}"]
 
  ; uncomment to use only the binary for your platform
  ;[origami "{{version}}" :exclusions [opencv/opencv-native]]

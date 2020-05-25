@@ -1,5 +1,10 @@
 {:mvn/repos
  {"vendredi" {:url "https://repository.hellonico.info/repository/hellonico/"}}
+ :aliases
+ {:ok {:main-opts ["-m" "opencv4.ok"]}
+  :simple {:main-opts ["-m" "opencv4.simple"]}
+  :video {:main-opts ["-m" "opencv4.video"]}
+  :youtube {:main-opts ["-m" "opencv4.youtube"]}}
  :deps {origami {:mvn/version "{{version}}"}
         origami/filters {:mvn/version "{{version-filters}}"}
         origami/sources {:mvn/version "{{version-sources}}"}
