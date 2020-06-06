@@ -6,4 +6,4 @@
 (defn -main [& args]
   (let [; register handler
         _ (YouTubeHandler.)]
-    (cvu/simple-cam-window {:video {:device "youtube://PnqzVkPDUHQ/0"}} identity)))
+    (cvu/simple-cam-window {:video {:device "youtube://DXUAyRRkI6k/0"}} identity)))
