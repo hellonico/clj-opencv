@@ -8,7 +8,7 @@
   [name]
   (let [data {:name name
               :ns-name (sanitize-ns name)
-              :version "4.3.0-8"
+              :version "4.5.0"
               :version-sources "1.0.1"
               :version-filters "1.11"
               :sanitized (name-to-path name)}]
